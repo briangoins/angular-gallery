@@ -6,7 +6,7 @@
     "prestart": "npm install",
     "start": "http-server -a 0.0.0.0 -p 8000"
   },
-  "author": "",
+  "author": "Brian Goins <bsgoins@gmail.com> (http://briangoins.com/)",
   "license": "ISC",
   "private": true,
   "devDependencies": {
