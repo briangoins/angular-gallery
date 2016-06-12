@@ -1,0 +1,15 @@
+{
+  "name": "angular-notepad",
+  "version": "1.0.0",
+  "description": "A pet project implementing a notepad using AngularJS",
+  "scripts": {
+    "prestart": "npm install",
+    "start": "http-server -a 0.0.0.0 -p 8000"
+  },
+  "author": "",
+  "license": "ISC",
+  "private": true,
+  "devDependencies": {
+    "http-server": "^0.8.0"
+  }
+}
