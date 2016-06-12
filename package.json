@@ -1,7 +1,7 @@
 {
   "name": "angular-gallery",
   "version": "1.0.0",
-  "description": "A pet project implementing a gallery using AngularJS",
+  "description": "A starter project implementing a gallery using AngularJS",
   "scripts": {
     "prestart": "npm install",
     "start": "http-server -a 0.0.0.0 -p 8000"
