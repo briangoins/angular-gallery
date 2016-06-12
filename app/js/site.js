@@ -16,21 +16,20 @@
 
 })(jQuery);
 
-$(function() {
+$(window).load(function() {
+  var gridItems = $('#hidden-grid').children('.grid-item').clone()
+  $('#grid')
+    .masonry({
+      // options
+      columnWidth: '.grid-sizer',
+      itemSelector: '.grid-item',
+      gutter: '.gutter-sizer'
+    })
+    .append(gridItems)
+    .masonry('appended', gridItems)
+})
 
-  $(window).load(function() {
-    var gridItems = $('#hidden-grid').children('.grid-item').clone()
-    $('#grid')
-      .masonry({
-        // options
-        columnWidth: '.grid-sizer',
-        itemSelector: '.grid-item',
-        transitionDuration: 0,
-        gutter: '.gutter-sizer'
-      })
-      .append(gridItems)
-      .masonry('appended', gridItems)
-  })
+$(function() {
 
   $('.header-filter input').on('change keyup', function() {
     $('#hidden-grid').count('imageCount', function() {
